@@ -1,8 +1,13 @@
 big=0
 small=0
 fork=0
+some=0
+count=0
 print('before',big)
 for thing in [-25,-99,0,9,12,13,54,6,78,98]:
+     count=count+1
+    some=some+thing
+    print(count,some,thing)
     fork=fork+1 #counts number of execution
     print(fork,thing)
     fork=fork+thing #adds in things
@@ -18,3 +23,4 @@ for thing in [-25,-99,0,9,12,13,54,6,78,98]:
 print('after',big)
 print('after',small)
 print('after',fork)
+print('after', count,some,some/count)
