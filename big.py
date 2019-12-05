@@ -3,12 +3,16 @@ small=0
 fork=0
 print('before',big)
 for thing in [-25,-99,0,9,12,13,54,6,78,98]:
-    fork=fork+1 #calculates executed loops
+    fork=fork+1 #counts number of execution
     print(fork,thing)
-    if thing>big: #finds biggest number from thing
+    fork=fork+thing #adds in things
+    print(fork,thing)
+    fork=fork-thing #substracts from things
+    print(fork,thing)
+    if thing>big: #finds biggest value
         big=thing
     print(big,thing)
-    if thing<small: #finds smallest number from thing
+    if thing<small: #finds smallest value
         small=thing
     print(small,thing)
 print('after',big)
