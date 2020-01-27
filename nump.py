@@ -1,6 +1,6 @@
 import numpy as np
 import numpy.matlib
-
+#(maximum numpy functions are included below (thanks to javatpoint) and every codes will be executable, sorry for less comments in advance)
 
 """a=np.array([[1,2,3],[4,5,6]])
 print(a)
